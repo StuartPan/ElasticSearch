@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+  data:
+    elasticsearch:
+      cluster-name: nini
+      cluster-nodes: http://192.168.220.127:9200
+      local: false
+      repositories:
+        enable: true
+    
+server:
+  port: 8081
+  servlet.context-path: /cs_cms
